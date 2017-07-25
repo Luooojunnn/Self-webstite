@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="cmn">
+<head>
+	<meta charset="UTF-8">
+	<title>知乎</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+	<script src="srcScript/jquery.js" type="text/javascript" language="javascript"></script>
+	<script src="srcScript/jquery.form.js" type="text/javascript" language="javascript"></script>
+	<script type="text/javascript" language="javascript">
+		$(function(){
+			$("#login").css("border-bottom","solid 2px #0f88eb");
+			
+			$("#login").click(function(){
+				$(".form1").css(
+					{"display":"inline"}
+				);
+				$(".form2").css(
+					{"display":"none"}
+				);
+				$(this).css({"color":"#0f88eb","border-bottom":"solid 2px #0f88eb"});
+				$("#enter").css({"color":"#868687","border":"none"});
+			});
+			
+
+			$("#enter").click(function(){
+				$(".form2").css(
+					"display","inline"
+				);
+				$(".form1").css(
+					"display","none"
+				)
+				$(this).css({"color":"#0f88eb","border-bottom":"solid 2px #0f88eb"});
+				$("#login").css({"color":"#868687","border":"none"});
+			});
+			
+
+			$("#aboutEnter").click(function(){
+				$("#societyEnter").fadeToggle(200)
+				
+			})
+		})
+	</script>
+	<noscript>开启脚本才行啊！</noscript>
+</head>
+<body>
+	<div id="head">
+		<img src="pic/logo.jpg" id="logo">
+	</div>
+	<div id="body">
+		<div id="login">注册</div>
+		<div id="enter">登录</div>
+		<div id="form">
+			<div class="form1"> 	<!--注册表-->
+				<form action="#" method="post">
+					<input type="text" name="name" id="name" placeholder="姓名" onfocus="this.style.color:'#fff';this.value='';" style="#000">
+					<input type="tel" name="tel" id="tel" placeholder="手机号（仅支持中国大陆）">
+					<input type="password" name="password" id="password" placeholder="密码（不少于六位）">
+					<input type="text" name="yzm" id="yzm" >
+					<div id="picYzm">验证码</div>
+					<input type="submit" value="注册知乎">
+					<span>点击「注册」按钮，即代表你同意<a href="#">《知乎协议》</a></span>
+				</form>
+			</div>
+			<div class="form2" style="display:none">		<!--登录表-->
+				<form action="#" method="post">
+					<input type="text" name="telormail" id="telormail" placeholder="手机号或邮箱">
+					<input type="password" name="password2" id="password2" placeholder="密码">
+					<input type="submit" value="登录">
+					<input type="checkbox" name="rememberMe" id="rememberMe" checked="checked"><label for="rememberMe">记住我</label>
+					<span id="cannotEnter"><a href="#">无法登陆</a></span>
+					<span id="aboutEnter"><a href="#">社交账号登录</a></span>
+					<div id="societyEnter" style="display:none">
+						<a href="#"><img src="pic/wchat.jpg"></a>
+						<a href="#"><img src="pic/weibo.jpg"></a>
+						<a href="#"><img src="pic/qq.jpg"></a>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="downloadApp"><a href="#">下载知乎APP</a></div>
+	</div>
+	<div id="foot">
+		@2016知乎-&nbsp&nbsp&nbsp<a href="#">知乎圆桌</a>-&nbsp&nbsp&nbsp<a href="#">发现</a>-&nbsp&nbsp&nbsp<a href="#">移动应用</a>-&nbsp&nbsp&nbsp<a href="#">使用机构账号登录</a>-&nbsp&nbsp&nbsp<a href="#">联系我们</a>-&nbsp&nbsp&nbsp&nbsp<a href="#">来知乎工作</a>-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#">京ICP备 13052560号</a>-&nbsp&nbsp&nbsp京公网安备 11010802010035
+	</div>
+	
+</body>
+</html>

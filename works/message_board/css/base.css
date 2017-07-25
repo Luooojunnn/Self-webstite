@@ -1,0 +1,163 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+h1,h2,h3,h4,h5,h6,p,li,figcaption{ 
+	font-family: "Microsoft Jhenghei" "Hiragino Sans GB" "Microsoft YaHei" sans-serif;
+	color: #756f71;
+}
+
+body{
+	background-color: #f1f0ee;
+}
+
+/*header部分开始*/
+header{
+	background-color: #fff;
+}
+
+div.logo{
+	position: absolute;
+}
+
+nav ul{
+	float: right;
+}
+
+body>header:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+nav ul li{
+	margin: 30px;
+	float: left;
+	font-size: 18px;
+	color: #333;
+	list-style-type: none;
+	position: relative;
+}
+
+header li a{
+	color: rgba(51, 51, 51, 1);
+	font-weight: bold;
+}
+
+nav ul li a:hover span{
+	animation: show_words 1s forwards;
+}
+
+@keyframes show_words{
+	0{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+li a span{
+	position: absolute;
+	left: 0px;
+	top: 20px;
+	opacity: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+/*header部分结束*/
+
+/*banner开始*/
+.banner{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	background: url(../picture/h_line.jpg) repeat-x bottom;
+	padding-left: 2em;
+}
+
+p:first-child{
+	font-size: 18px;
+	font-weight: bold;
+}
+p:nth-child(2){
+	font-size: 16px;
+	text-indent: 10em;
+	margin: 2em auto;
+	color: rgba(152, 152, 154, 1);
+}
+/*banner结束*/
+/*留言板样式设置开始*/
+
+.board_left{
+	width: 60%;
+	margin-left: 30px;
+	float: left;
+}
+
+/*留言板样式设置结束*/
+/*board_right样式开始*/
+@media screen and (max-width: 1024px){
+	.board_right,.logo,.dragon{
+		display: none;
+	}
+}
+.board_right{
+	width: 330px;
+	z-index: 1;
+	position: fixed;
+	right: 8%;
+	padding-top: 20px;
+	background-color: rgba(255,255,255,0.4);
+}
+/*board_right样式结束*/
+/*nav样式开始*/
+.nav{
+	float: left;
+	width: 110px;
+	height: 50px;
+	margin-bottom: 20px;
+	margin-left: 30px;
+	text-align: center;
+	line-height: 50px;
+}
+
+.nav p{
+	color: #fff;
+	background-color: rgba( 255,255,255,0.3 );
+	transition: transform 2s;
+}
+
+.nav p:hover{
+	transform: rotate(360deg);
+}
+
+a:first-child .nav{
+	background-color: #666;
+}
+a:nth-child(2) .nav{
+	background-color: #0cc;
+}
+a:nth-child(3) .nav{
+	background-color: #63c;
+}
+a:nth-child(4) .nav{
+	background-color: #c96;
+}
+/*nav样式结束*/
+/*dragon样式开始*/
+.dragon{
+	width: 330px;
+	height: 980px;
+	position: absolute;
+	background: url(../picture/both.png) no-repeat;
+	z-index: -999;
+	right: 8%;
+}
+/*dragon样式结束*/

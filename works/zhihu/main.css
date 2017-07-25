@@ -1,0 +1,237 @@
+*{
+	margin: 0;
+	padding: 0;
+	}
+body{
+	height: 735px;
+	background-color: #f7fafc;
+	
+}
+a{
+	text-decoration: none;
+}
+
+/*head部分*/
+#head{
+	height: 167px;
+	width: auto;
+}
+#logo{
+	margin-top: 42px;
+	margin-left: 39.9%;
+}
+
+/*body部分*/
+#body{
+	height: 457px;
+}
+#login{
+	margin-left: 45.5%;
+	margin-top: 25px;
+	float: left;
+	font-size: 19px;
+	
+}
+#enter{
+	margin-top: 25px;
+	margin-left: 30px;
+	float: left;
+	font-size: 20px;
+
+}
+#login,#enter{
+	
+	color: #868687;
+}
+#login:hover,#enter:hover{
+	cursor:pointer;
+}
+#form{
+	width: 302px;
+	height: 304px; 
+	position: absolute;
+	left: 39%;
+	top:240px;	
+	float: left;
+	clear: both;
+}
+#downloadApp{
+	width: 302px;
+	height: 26px;
+	border: solid 1px #96c2e9;
+	border-radius: 2px 2px 2px 2px;
+	float: left;
+	position: absolute;
+	font-size: 15px;
+	top: 545px;
+	left: 39%;
+	text-align: center;
+	padding-top: 14px;
+}
+#downloadApp a{
+	
+	color: #5fa6e5;
+}
+
+/*foot部分*/
+#foot{
+	font-size: 12px;
+	margin-top: 22px;
+	margin-left: 20%;
+	color: #aebdc9;
+}
+#foot a{
+	color: #aebdc9;
+}
+#foot a:hover{
+	text-decoration: underline;
+}
+
+/*form1样式*/
+.form1 input{
+	width: 288px;
+	height: 30px;
+	font-size: 15px;
+	padding-left: 12px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border: solid 1px #d5d5d5;
+	color: #555555;
+	
+}
+#picYzm{
+	width: 96px;
+	height: 41px;	background-color: red;
+	position: absolute;
+	left: 68.3%;
+	top: 148px;
+}
+.form1 input[type="submit"]{
+	width: 302px;
+	height: 40px;
+	background-color: #0f88eb;
+	color: #ffffff;
+	border-radius: 4px 4px 4px 4px;
+	cursor: pointer;
+	position: absolute;
+	top: 208px;
+	left: 1px;
+}
+
+.form1 input[type="submit"]:hover{
+	background-color: #55abed;
+}
+.form1 span{
+	font-size: 14px;
+	position: absolute;
+	top: 268px;
+	left:1px;
+	color: #999999;
+}
+.form span a{
+	color: #698ebf;
+}
+
+/*form2样式*/
+.form2 input{
+	width: 288px;
+	height: 30px;
+	font-size: 15px;
+	padding-left: 12px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border: solid 1px #d5d5d5;
+	color: #555555;
+}
+.form2 input[type="submit"]{
+	width: 302px;
+	height: 40px;
+	background-color: #0f88eb;
+	color: #ffffff;
+	border-radius: 4px 4px 4px 4px;
+	cursor: pointer;
+	position: absolute;
+	top: 110px;
+	left: 1px;
+}
+
+}
+.form2 input[type="submit"]:hover{
+	background-color: #55abed;
+}
+.form2 input[type="checkbox"]{
+	width: 13px;
+	height: 13px;
+	position: absolute;
+	left: -3px;
+	top: 164px;
+	border: none;
+}
+label{
+	position: absolute;
+	left: 38px;
+	top: 175px;
+	font-size: 14px;
+	color: #555555;
+}
+#cannotEnter a{
+	color: #555555;
+	font-size: 14px;
+	position: absolute;
+	top: 175px;
+	left: 237px;
+}
+#aboutEnter a{
+	color: #787878;
+	font-size: 13px;
+	position: absolute;
+	top: 216px;
+	left: 3px;
+}
+#aboutEnter a:hover{
+	font-weight: bolder;
+}
+#societyEnter{
+	width: 142px;
+	height: 18px;
+	position: absolute;
+	top: 212px;
+	left: 86px;
+	border: none;
+}
+#societyEnter a{
+	float: left;
+	margin-left: 23px;
+	border: none;
+}
+#societyEnter img{
+	border: none;
+}
+
+
+
+
+
+
+
+
+
+/*设置placeholder颜色*/
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #cccccc;
+}
+ 
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #cccccc;
+}
+/*input后边的删除号*/
+input::-ms-clear { 
+	width: 15px;
+	height: 15px;
+ }
+ ::-ms-reveal { 
+	width: 16px;
+	height: 16px;
+ }

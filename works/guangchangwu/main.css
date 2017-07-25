@@ -1,0 +1,201 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+#container{
+	background-color: #D1EEEE;
+	padding: 40px;
+	position: relative;
+	overflow: hidden;
+}
+
+
+
+
+#music_area{
+	width: 350px;
+	height: 350px;
+	background-image: url(pic/music.jpg);
+	background-size: 350px 350px;
+	border-radius: 175px;
+	
+}
+
+
+
+#dancing_area{
+	width: 350px;
+	height: 350px;
+	background-color: #CD00CD;
+	margin-top: 40px;
+	background-image: url(pic/dancing.jpg);
+	background-size: 350px 350px;
+}
+
+
+
+#everyday_best{
+	width: 600px;
+	height: 400px;
+	background-color: #B23AEE;
+	position: absolute;
+	top: 180px;
+	left: 440px;
+	
+
+}
+
+
+
+
+
+#user_information{
+	width: 200px;
+	height: 740px;
+	background-color: #98FB98;
+	position: absolute;
+	left: 1080px;
+	top: 40px;
+}
+
+
+.star{
+	border-left: solid 200px #9C9C9C;
+	border-top: solid 100px transparent;
+	border-bottom: solid 100px transparent;
+	float: left;
+	margin-left: 100px;
+	margin-top: 75px;
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.user>p a{
+	text-decoration: none;
+	font-size: 40px;
+	font-style: italic;
+	color: #4876FF;
+}
+
+.user>p{
+	margin-top: 70px;
+}
+
+
+
+
+#erweima{
+	position: absolute;
+	top: 630px;
+	left: 895px;
+}
+
+.triangle{
+	border-left: solid 30px #98FB98;
+	border-top: solid 15px transparent;
+	border-bottom: solid 15px transparent;
+	float: right;
+	margin-top: 120px;
+}
+
+.triangle2{
+	border-left: solid 30px #98FB98;
+	border-top: solid 15px transparent;
+	border-bottom: solid 15px transparent;
+	float: right;
+	margin-right: -30px;
+	margin-top: 70px;
+}
+
+#i_information{
+	width: 540px;
+	height: 120px;
+	background-color: #98FB98;
+	position: absolute;
+	left: 500px;
+	top: 40px;
+}
+
+ul{
+	list-style-type: none;
+}
+
+ul>li{
+	font-size: left;
+	font-size: 50px;
+	float: left;
+	margin-top: 35px;
+	margin-left: 60px;
+}
+
+ul>li:hover{
+	font-weight: bolder;
+}
+
+li+li{
+	margin-left: 220px;
+}
+ul>li>a{
+	text-decoration: none;
+}
+
+/*以下为播放时候的旋转动画.PS:linear可以使动画线性变化*/
+.revolve_animation{
+	-ms-animation: revolve 10s infinite linear;
+	-webkit-animation: revolve 10s infinite linear;
+	animation: revolve 10s infinite linear;
+	
+	/*
+	-ms-animation-timing-function : 10s;
+	-webkit-animation-timing-function : 10s;
+	animation-timing-function : 10s;
+	*/
+
+	/*
+	animation-fill-mode : both;
+	-ms-animation-fill-mode : both;
+	-webkit-animation-fill-mode : both;
+	*/
+}
+@-ms-keyframes revolve{
+	0%{
+		-ms-transform : rotate(0deg);
+	}
+	100%{
+		-ms-transform : rotate(360deg);
+	}
+}
+@-webkit-keyframes revolve{
+	0%{
+		-webkit-transform : rotate(0deg);
+	}
+	100%{
+		-webkit-transform : rotate(360deg);
+	}
+}
+
+/*.stop_animation{
+	animation-play-state:paused;
+	-ms-animation-play-state:paused;
+	-webkit-animation-play-state:paused;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

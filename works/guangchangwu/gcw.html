@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="cmn">
+<head>
+	<meta charset="UTF-8">
+	<title>广场舞</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src='jquery.min.js'></script>
+	<script type="text/javascript" src='based.js'></script>
+</head>
+<body>
+
+	<div id="container">
+		
+		<div id="music_area">
+			<div class="star"></div>	<!--这是模拟播放键-->
+		</div>
+
+
+		<div id="dancing_area">
+			<div class="star"></div>	<!--这是模拟播放键-->
+		</div>
+
+		
+		<div id="everyday_best">
+			<!-- 
+			<video src='http://player.youku.com/player.php/sid/XMTY4MTM2MTU0NA==/v.swf' width='600px' height='400px' controls='controls'></video>
+			-->
+			<embed src='http://player.youku.com/player.php/sid/XMTQ0Mjc5OTMyNA==/v.swf' allowFullScreen='true' quality='high' width='600' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
+		</div>
+
+	
+		<div id="user_information">
+			<nav class='user'>
+			<!--应该用无序列表，我用错了，乱用了p-->
+				<p><a href="#">个人资料</a></p>
+				<p><a href="#">上传歌曲</a></p>
+				<p><a href="#">上传舞蹈</a></p>
+				<p><a href="#">下载歌曲</a></p>
+				<p><a href="#">下载舞蹈</a></p>
+				<p id="about_us"><a href="#about_us">了解我们</a></p>
+			</nav>
+		</div>
+		<!--二维码隐藏-->
+		<div id='erweima' style="display:none">
+			<img src="pic/erweima.jpg">
+			<div class="triangle"></div>
+			<p>这是二维码</p>
+		</div>
+		<!--个人资料页面-->
+		<div id='i_information' style="display:none">
+			<ul>
+				<li><a href="#">登录</a></li>
+				<li><a href="#">注册</a></li>
+			</ul>
+
+			<div class="triangle2"></div>
+		</div>
+	</div>
+
+</body>
+</html>
